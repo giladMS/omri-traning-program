@@ -2,10 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {RouterModule, Routes} from "@angular/router";
 import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import {AppRoutingModule} from "./app.routing";
+import {LibModule} from "./lib/lib.module";
 
 
 @NgModule({
@@ -16,7 +16,8 @@ import {AppRoutingModule} from "./app.routing";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
