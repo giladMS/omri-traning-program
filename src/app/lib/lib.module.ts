@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {SimplePopupModule} from "./simple-popup/simple-popup.module";
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    SimplePopupModule
   ],
   declarations: []
 })

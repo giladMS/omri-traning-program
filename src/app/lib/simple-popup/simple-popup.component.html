@@ -1,0 +1,8 @@
+<div class="back-dropped-screen" (click)="dismiss()"></div>
+
+<div class="popup-wrapper">
+  <h1>{{popupData.title}}</h1>
+  <p>{{popupData.description}}</p>
+  <button (click)="close()">{{popupData.okButtonText}}</button>
+  <button (click)="confirm()">{{popupData.cancelButtonText}}</button>
+</div>
